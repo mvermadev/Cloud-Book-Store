@@ -1,0 +1,80 @@
+body{
+	margin: 0px;
+	background-image: url("../img/bg.jpeg");
+	background-repeat: no-repeat;
+	background-size: cover; 
+	height: 100vh;
+}
+header{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	line-height: 0px;
+	background-color: #4ebaa9;
+	position: relative;
+	flex-wrap: wrap;
+
+}
+
+header button a{
+	text-decoration: none;
+	color: white;
+}
+
+header h1{
+	padding: 10px;
+	color: white;
+	text-shadow: 1px 1px black;
+}
+
+header button{
+	padding: 8px 20px;
+	border: none;
+	border-radius: 7px;
+	background-color: dodgerblue;
+	font-size: 16px;
+	font-weight: bold;
+	border-bottom: 7px solid orange;
+	margin: 5px;
+}
+	.myside{
+	height: 100%;
+	width: 0px;
+	position: fixed;
+	z-index: 99;
+	top: 0;
+	left: 0;
+	background: green;
+	overflow-x: hidden;
+	transition: 0.5s;
+	padding-top: 60px;
+}
+
+.myside .closebtn{
+	position: absolute;
+	top: 0;
+	right: 25px;
+	font-size: 30px;
+	margin-left: 50px;
+}
+	
+span{display: none;}
+@media screen and (max-width: 500px) {
+	header {
+		display: flex;
+		justify-content: center;
+	}
+	header h1{
+		font-size: 24px;
+	}
+	header button{
+		display: none;
+	}
+	span{display: block;}
+
+	nav{
+		display: flex;
+		flex-direction: column;
+	}
+
+}
